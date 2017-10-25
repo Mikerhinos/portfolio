@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Portfolio Michael</title>
+        <title>Portfolio Michael</title> <!-- Nota : beaucoup d'éléments ont été générés par Netbeans en créant un nouveau projet Bootstrap -->
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -33,12 +34,13 @@
           <a class="navbar-brand" href="#">Portfolio Michael</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-          <li class="active"><a href="_self">Accueil</a></li>
-          <li><a href="#">Mes réalisations</a></li>
-          <li><a href="#">Contactez-moi</a></li>
-          <li><a href="#">Mon CV</a></li>
-        </ul>
+          <div class="active navbar-brand menuC"><a href="_self">Accueil</a></div>
+          <div class='navbar-brand menuC dropdown'><a href="#">Mes réalisations</a>
+              <div class="dropdown-content"><p>Calculatrice JS</div>
+              <div class='dropdown-content'><p>Exercice JS</p></div>
+                                                    </div>
+          <div class='navbar-brand menuC'><a href="#">Contactez-moi</a></div>
+          <div class='navbar-brand menuC'><a href="#">Mon CV</a></div>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -58,7 +60,6 @@
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <h2>Ceci ne veut rien dire</h2>
