@@ -1,0 +1,117 @@
+@font-face {
+    font-family: bloody;
+    src: url('bloody.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: PressStart2P;
+    src: url('PressStart2P.ttf') format('truetype');
+}
+
+body {
+    font-family: PressStart2P, Arial;
+    text-align: center;
+    background-color: black;
+}
+
+.score {
+    font-size: 40px;
+    color: gold;
+    font-family: PressStart2p, Arial;
+}
+
+.directions a:link{
+    color: red;
+    font-family: bloody, Arial;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.directions a:visited{
+    color: #ff2020;
+}
+
+.horiz2 {
+    width:25%;
+    background-color: #3f1d05;
+}
+
+.verti2 {
+    width:25%;
+    background-color: #231003;
+}
+
+.hautgauche {
+    background: linear-gradient(-155deg, #542707 50%, #6d360f 50%);
+    width: 25%;
+}
+
+.hautdroite {
+    background: linear-gradient(155deg, #542707 50%, #6d360f 50%);
+    width: 25%;
+}
+
+.basgauche {
+    background: linear-gradient(155deg, #6d360f 50%, #542707 50%);
+    width: 25%;
+}
+
+.basdroite {
+    background: linear-gradient(-155deg, #6d360f 50%, #542707 50%);
+    width: 25%;
+}
+
+/* TABLE 2 */
+.hautgauche2 {
+    background: linear-gradient(-155deg, #3f1d05 50%, #331703 50%);
+    width: 25%;
+}
+
+.hautdroite2 {
+    background: linear-gradient(155deg, #3f1d05 50%, #331703 50%);
+    width: 25%;
+}
+
+.basgauche2 {
+    background: linear-gradient(155deg, #331703 50%, #3f1d05 50%);
+    width: 25%;
+}
+
+.basdroite2 {
+    background: linear-gradient(-155deg, #331703 50%, #3f1d05 50%);
+    width: 25%;
+}
+/* FIN TABLE 2 */
+
+table {
+    border: 0;
+    border-spacing : 0;
+    border-collapse : collapse;
+    width: 100%;
+    font-family: bloody, Arial;
+}
+
+.table1 tr {
+    height: 150px;
+}
+
+.table2 tr {
+    height: 75px;
+}
+
+.container {
+    z-index : 1;
+    position : relative;
+}
+
+.adjusted {
+    z-index : 2;
+    position : absolute;
+    margin-left : 450px;
+    top : 150px;
+}
+
+#monstre {
+    height:444px;
+    width:312px;
+}
