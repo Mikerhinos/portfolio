@@ -12,7 +12,10 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="game/style.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="calc/BSoverload.css">
+        <script src="calc/script.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/script.js"></script>
     </head>
@@ -20,64 +23,79 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="row">
-        <div class="col-md-12 bandeau">
-            <ul class="nav nav-pills navbar-brand">
-              <li class="active btn-primary"><a href="#">Accueil</a></li>
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Mes réalisations <b class="caret"></b></a>
-                <ul class="dropdown-menu" id="menu1">
-                  <li><a href="calc/index.html">Calculatrice JS</a></li>
-                  <li><a href="game/testNiveau.html">Concept jeu HTML</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="https://www.canva.com/design/DAB9OTffvn0/share?role=EDITOR&token=j_h8hYwR6dqG2_Engy-8zA&utm_content=DAB9OTffvn0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">Curriculum Vitae</a>
-              </li>
-              <li class="dropdown">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Transforme la navbar en icône à cliquer pour dévoiler le menu lorsque affiché en small -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Afficher le menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand accueil" href="#">Accueil</a>
+                </div>
+                <!-- Fin bouton small -->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Mes réalisations <b class="caret"></b></a>
+                          <ul class="dropdown-menu" id="menu1">
+                              <li><a href="#" id="calc">Calculatrice JS</a></li>
+                              <li><a href='#' id="game">Concept jeu HTML</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="https://www.canva.com/design/DAB9OTffvn0/share?role=EDITOR&token=j_h8hYwR6dqG2_Engy-8zA&utm_content=DAB9OTffvn0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">Curriculum Vitae</a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="contenu">
+            <div class="jumbotron">
+                <div class="container">
+                  <h1>Bienvenue sur mon portfolio !</h1>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h2>Ceci ne veut rien dire</h2>
+                    <p>Street art wayfarers hoodie scenester. Knausgaard flannel bicycle rights, tbh iPhone celiac jean shorts deep v humblebrag jianbing. Godard pinterest food truck pabst la croix tacos gastropub cardigan cronut wolf aesthetic kale chips twee lyft leggings. Master cleanse seitan quinoa tacos hell of 90's letterpress readymade, live-edge kogi iceland vape occupy fam ramps. Tilde poke vice, marfa tumblr tote bag migas bicycle rights bespoke fixie 3 wolf moon flannel you probably haven't heard of them plaid locavore. Man bun chicharrones small batch venmo. Viral pabst fam locavore, hot chicken drinking vinegar tousled wayfarers. Gochujang man bun plaid 90's tousled unicorn ramps raw denim. You probably haven't heard of them bushwick pickled iceland, humblebrag selfies skateboard echo park fashion axe williamsburg. Kale chips single-origin coffee organic thundercats scenester irony. IPhone normcore keytar blue bottle tumeric tote bag cold-pressed coloring book, ennui deep v messenger bag. Seitan celiac jianbing, pug iPhone bespoke poutine air plant iceland fixie readymade enamel pin portland ugh everyday carry. Gastropub chillwave jianbing distillery pour-over af chicharrones. Hexagon schlitz vegan dreamcatcher ramps fingerstache jean shorts austin aesthetic. Taiyaki pinterest la croix stumptown.</p>
+                    <p><a class="btn btn-default" href="#" role="button">Plus d'infos &raquo;</a></p>
+                  </div>
+                  <div class="col-md-4">
+                    <h2>C'est simplement un texte généré</h2>
+                    <p>Forage mlkshk raclette pickled. Intelligentsia cronut bushwick, fixie quinoa tumblr four dollar toast williamsburg +1 normcore ennui lomo man braid biodiesel pop-up. Poutine vinyl live-edge lumbersexual cred. Cloud bread quinoa freegan brunch, hashtag vinyl gastropub organic lomo selvage sartorial meggings master cleanse. Hashtag chia skateboard bespoke ugh. +1 unicorn VHS tilde dreamcatcher, pour-over flexitarian snackwave. Migas XOXO yr forage coloring book woke fanny pack. Occupy paleo blog synth small batch cliche 90's poutine hammock pinterest semiotics authentic. Kogi health goth viral cardigan photo booth kitsch beard ugh brunch wayfarers franzen readymade ethical put a bird on it blog. Pok pok venmo sriracha la croix XOXO cronut franzen small batch freegan.</p>
+                 </div>
+                  <div class="col-md-4">
+                    <h2>En ipsum typé hipster !</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  </div>
+                </div>
+                <hr>
+                <footer>
+                  <p>&copy; Mikerhinos 2017</p>
+                </footer>
+            </div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>');</script>
+            <script src="js/vendor/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/script2.js"></script>
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments);});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r);}(window,document,'script','ga'));
+                ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            </script>
         </div>
-    </div>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Bienvenue sur mon portfolio !</h1>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Ceci ne veut rien dire</h2>
-          <p>Street art wayfarers hoodie scenester. Knausgaard flannel bicycle rights, tbh iPhone celiac jean shorts deep v humblebrag jianbing. Godard pinterest food truck pabst la croix tacos gastropub cardigan cronut wolf aesthetic kale chips twee lyft leggings. Master cleanse seitan quinoa tacos hell of 90's letterpress readymade, live-edge kogi iceland vape occupy fam ramps. Tilde poke vice, marfa tumblr tote bag migas bicycle rights bespoke fixie 3 wolf moon flannel you probably haven't heard of them plaid locavore. Man bun chicharrones small batch venmo. Viral pabst fam locavore, hot chicken drinking vinegar tousled wayfarers. Gochujang man bun plaid 90's tousled unicorn ramps raw denim. You probably haven't heard of them bushwick pickled iceland, humblebrag selfies skateboard echo park fashion axe williamsburg. Kale chips single-origin coffee organic thundercats scenester irony. IPhone normcore keytar blue bottle tumeric tote bag cold-pressed coloring book, ennui deep v messenger bag. Seitan celiac jianbing, pug iPhone bespoke poutine air plant iceland fixie readymade enamel pin portland ugh everyday carry. Gastropub chillwave jianbing distillery pour-over af chicharrones. Hexagon schlitz vegan dreamcatcher ramps fingerstache jean shorts austin aesthetic. Taiyaki pinterest la croix stumptown.</p>
-          <p><a class="btn btn-default" href="#" role="button">Plus d'infos &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>C'est simplement un texte généré</h2>
-          <p>Forage mlkshk raclette pickled. Intelligentsia cronut bushwick, fixie quinoa tumblr four dollar toast williamsburg +1 normcore ennui lomo man braid biodiesel pop-up. Poutine vinyl live-edge lumbersexual cred. Cloud bread quinoa freegan brunch, hashtag vinyl gastropub organic lomo selvage sartorial meggings master cleanse. Hashtag chia skateboard bespoke ugh. +1 unicorn VHS tilde dreamcatcher, pour-over flexitarian snackwave. Migas XOXO yr forage coloring book woke fanny pack. Occupy paleo blog synth small batch cliche 90's poutine hammock pinterest semiotics authentic. Kogi health goth viral cardigan photo booth kitsch beard ugh brunch wayfarers franzen readymade ethical put a bird on it blog. Pok pok venmo sriracha la croix XOXO cronut franzen small batch freegan.</p>
-       </div>
-        <div class="col-md-4">
-          <h2>En ipsum typé hipster !</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-      </div>
-      <hr>
-      <footer>
-        <p>&copy; Mikerhinos 2017</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>');</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments);});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r);}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
