@@ -1,10 +1,54 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Contact</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-    </body>
-</html>
+<div class="row mato-2">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <h2>Formulaire de contact</h2>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+<form>
+    <div class="row mato-2">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <p>Votre nom : <input type="text" value="Nom"></p>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    
+        <div class="row mato-1">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <p>Votre email : <input type="text" value="Email" id="email"></p>
+            <span id="spanemail" hidden>Adresse email invalide !</span>
+        </div>
+        <script>
+            // Script de vérification d'email en temps réel via regexp
+            $("#email").keypress(function verifemail(){
+                var regE = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{1,})$/i;
+                if (!regE.test($("#email").val())){
+                    $("#spanemail").show();
+                }
+                else {
+                    $("#spanemail").hide();
+                }
+            });
+        </script>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row mato-1">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <p>Votre texte : <textarea>Votre texte</textarea></p>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+        <div class="row mato-1">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <button id="formu">Envoyer</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <script src="js/script2.js"></script>
+</form>

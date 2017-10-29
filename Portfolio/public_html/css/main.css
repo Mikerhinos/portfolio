@@ -27,3 +27,11 @@ body {
 .bandeau {
     background-image: url("img/ray.png");
 }
+
+.mato-2 {
+    margin-top: 6em;
+}
+
+.mato-1 {
+    margin-top: 2em;
+}
